@@ -16,22 +16,22 @@ Compiling and installing driver:
 
 **fedora package install**
 ```
-dnf install wget symlinks make gcc kernel-devel
+sudo dnf install wget symlinks make gcc kernel-devel
 ```
 **ubuntu package install**  
 ```
-apt install wget symlinks make gcc linux-headers-generic
+sudo apt install wget symlinks make gcc linux-headers-generic
 ```
 **arch package install**  
 ```
-pacman -S wget symlinks make gcc linux-headers
+sudo pacman -S wget symlinks make gcc linux-headers
 ```
 **build driver**  
 ```
 git clone https://github.com/leifliddy/macbook12-audio-driver.git  
 cd macbook12-audio-driver/
 # run the following command as root or with sudo
-./install.cirrus.driver.sh
+sudo ./install.cirrus.driver.sh
 reboot
 ```
 
